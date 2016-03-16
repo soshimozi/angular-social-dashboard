@@ -1,0 +1,49 @@
+<div eg-backstretch ng-style="style()" class="register-body section-container" style="background-image: url('./build/images/backgrounds/1.jpg');background-repeat: no-repeat;">
+
+	<!-- Top menu -->
+	<nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">NoFear - Angular Social Media</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="top-navbar-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<span class="li-text">
+							Login 
+						</span> 
+						using: 
+						<span class="li-social">
+							<a href="" ng-click="loginWithFacebook"><i class="fa fa-facebook"></i></a> 
+							<a href="" ng-click="loginWithTwitter"><i class="fa fa-twitter"></i></a> 
+							<a href="" ng-click="loginWithGithub"><i class="fa fa-github"></i></a> 
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+    <div class="container">
+        <div class="row">
+        	<div class="col-sm-4"></div>
+            <div class="col-sm-5 form-box">
+				<div class="login-form">
+					<input type="text" ng-model="vm.username" style="margin-bottom: 5px;" class="form-control" placeholder="Username ..."></input>
+					<input type="password" ng-model="vm.password" class="form-control" placeholder="Password ..."></input>
+				</div>
+				<div>
+					<button type="button" class="btn btn-primary" ng-click="vm.register()">Register</button>
+					<button type="button" class="btn btn-default" ng-click="vm.login()">Login</button>
+				</div>
+				<a class="help" href=""><span style="font-weight: bold;">need help?</span></a>
+			</div>
+        </div>
+    </div>
+</div>

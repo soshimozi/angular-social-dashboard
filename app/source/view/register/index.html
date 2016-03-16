@@ -1,0 +1,217 @@
+<div eg-backstretch ng-style="style()" class="register-body section-container" style="background-image: url('./build/images/backgrounds/1.jpg');background-repeat: no-repeat;">
+		
+	<!-- Top menu -->
+	<nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">Bootstrap Registration Form Template</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="top-navbar-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<span class="li-text">
+						    <a href="" ng-click="gotoLogin()"><strong>Login</strong></a> 
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+    <!-- Top content -->
+    <div class="container">
+    	
+        <div class="col-sm-8 form-box">
+        	<div class="form-top">
+        		<div class="form-top-left">
+        			<h3>Sign up now</h3>
+            		<p>Fill in the form below to get instant access:</p>
+        		</div>
+        		<div class="form-top-right">
+        			<i class="fa fa-pencil"></i>
+        		</div>
+            </div>
+            <div class="form-bottom">
+                <form name="registrationform" role="form" action="" method="post" class="registration-form">
+                	<div class="form-group">
+                		<label class="sr-only" for="form-first-name">First name</label>
+                    	<input type="text" ng-model="firstname" required name="firstname" placeholder="First name..." class="form-first-name form-control" id="form-first-name">
+                    </div>
+                    <div class="form-group">
+                    	<label class="sr-only" for="form-last-name">Last name</label>
+                    	<input type="text" ng-model="lastname" required name="lastname" placeholder="Last name..." class="form-last-name form-control" id="form-last-name">
+                    </div>
+                    <div class="form-group">
+                    	<label class="sr-only" for="form-email">Email</label>
+                    	<input type="email" ng-model="username" name="email" required placeholder="Email..." class="form-email form-control" id="form-email">
+                    </div>
+                    <div class="form-group">
+                    	<label class="sr-only" for="form-password">Email</label>
+                    	<input type="password" ng-model="password" name="password" required placeholder="Password..." class="form-password form-control" id="form-password">
+                    </div>
+                    <div class="form-group">
+                    	<label class="sr-only" for="form-passwordcheck">Email</label>
+                    	<input type="password" ng-model="passwordcheck" name="passwordcheck" required placeholder="Verify Password..." class="form-passwordcheck form-control" id="form-passwordcheck">
+                    </div>
+                    <div class="form-group">
+                    	<label class="sr-only" for="form-about-yourself">About yourself</label>
+                    	<textarea name="form-about-yourself" placeholder="About yourself..." class="form-about-yourself form-control" id="form-about-yourself"></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <button type="button" ng-click="register()" class="btn btn-primary">Sign me up!</button>
+                            <a ui-sref="feature" class="btn btn-success">More Info</a>
+                        </div>
+					    <div class="col-lg-8">
+                        	<a href="#" class="launch-modal" data-modal-id="modal-privacy">Privacy Policy</a> - 
+                        	<a href="#" class="launch-modal" data-modal-id="modal-faq">FAQ</a>
+                    	</div>
+                    </div>
+                </form>
+                
+                <span>text = {{username}}</span><br/>
+                <tt>registrationform.email.$valid = {{registrationform.email.$valid}}</tt><br/>
+                <tt>registrationform.email.$error = {{registrationform.email.$error}}</tt><br/>
+                <tt>registrationform.$valid = {{registrationform.$valid}}</tt><br/>
+                <tt>registrationform.$error.required = {{!!registrationform.$error.required}}</tt><br/>
+                <tt>registrationform.$error.email = {{!!registrationform.$error.email}}</tt><br/>                
+            </div>
+        </div>
+
+        
+    </div>
+ 
+</div>
+
+<!--
+                </div>
+            </div>
+        </div>
+
+-->
+
+<!-- Features 
+<div id='features' class="features-container section-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 features section-description wow fadeIn">
+                <h2>What's included</h2>
+                <div class="divider-1 wow fadeInUp"><span></span></div>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="col-sm-4 features-box features-box-gray wow fadeInUp">
+            	<div class="features-box-icon">
+            		<i class="fa fa-eye"></i>
+            	</div>
+                <h3>Easy To Use</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+            </div>
+            <div class="col-sm-4 features-box wow fadeInDown">
+            	<div class="features-box-icon">
+            		<i class="fa fa-thumbs-o-up"></i>
+            	</div>
+                <h3>Responsive Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+            </div>
+            <div class="col-sm-4 features-box features-box-gray wow fadeInUp">
+            	<div class="features-box-icon">
+            		<i class="fa fa-cog"></i>
+            	</div>
+                <h3>Bootstrap Engine</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="col-sm-4 features-box wow fadeInUp">
+            	<div class="features-box-icon">
+            		<i class="fa fa-video-camera"></i>
+            	</div>
+                <h3>Lots Of Videos</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+            </div>
+            <div class="col-sm-4 features-box features-box-gray wow fadeInDown">
+            	<div class="features-box-icon">
+            		<i class="fa fa-mobile"></i>
+            	</div>
+                <h3>Mobile App</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+            </div>
+            <div class="col-sm-4 features-box wow fadeInUp">
+            	<div class="features-box-icon">
+            		<i class="fa fa-users"></i>
+            	</div>
+                <h3>Big Community</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="col-sm-12 section-bottom-button wow fadeInUp">
+                <a class="btn btn-link-1 scroll-link" href="#top-content">Sign up now</a>
+        	</div>
+        </div>
+    </div>
+</div>   
+
+<div style="background-image: url('./build/images/backgrounds/1.jpg');background-repeat: no-repeat;background-size: 100% 100%;" class="how-it-works-container section-container section-container-image-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 how-it-works section-description wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                <h2>Ready in 4 steps</h2>
+                <div class="divider-1 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"><span></span></div>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="col-sm-4 col-sm-offset-1 how-it-works-box wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+            	<div class="how-it-works-box-icon">
+            		<i class="fa fa-pencil"></i>
+            		<span aria-hidden="true" class="how-it-works-step">1</span>
+            	</div>
+                <h3>Sign up</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+            </div>
+            <div class="col-sm-4 col-sm-offset-2 how-it-works-box wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+            	<div class="how-it-works-box-icon">
+            		<i class="fa fa-ticket"></i>
+            		<span aria-hidden="true" class="how-it-works-step">2</span>
+            	</div>
+                <h3>Make payment</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-1 how-it-works-box wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+            	<div class="how-it-works-box-icon">
+            		<i class="fa fa-key"></i>
+            		<span aria-hidden="true" class="how-it-works-step">3</span>
+            	</div>
+                <h3>Log in</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+            </div>
+            <div class="col-sm-4 col-sm-offset-2 how-it-works-box wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+            	<div class="how-it-works-box-icon">
+            		<i class="fa fa-thumbs-up"></i>
+            		<span aria-hidden="true" class="how-it-works-step">4</span>
+            	</div>
+                <h3>Start creating</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="col-sm-12 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                <a class="btn btn-link-1 scroll-link" href="#top-content">Sign up now</a>
+        	</div>
+        </div>
+    </div>
+</div>
+        
+-->        
+        
+<!--<div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 100%; width: 100%; z-index: -999998; position: absolute;"><img src="./build/images/backgrounds/1.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1903px; height: 1427.25px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -260.125px;"></div>-->
